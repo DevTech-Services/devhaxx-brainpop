@@ -3,12 +3,7 @@ window.dragElement = e => { var n = 0, t = 0, o = 0, u = 0; function d(e) { (e =
 window.showToast=(t,e)=>{let o=document.createElement("div"),d=document.createElement("div");o.style.cssText=`position: fixed; bottom: -100px; right: 20px; background-color: ${e||"purple"}; color: white; border-radius: 10px; z-index: 9999; transition: bottom 0.5s ease-in-out; max-width: 300px; padding: 10px;`,d.style.cssText="font-size: 18px; word-wrap: break-word;",d.textContent=t,o.appendChild(d),document.body.appendChild(o),setTimeout(()=>{o.style.bottom="20px"},100),setTimeout(()=>{o.style.bottom=`-${o.offsetHeight+20}px`,setTimeout(()=>{document.body.removeChild(o)},500)},Math.max(3e3,50*t.length))};
 window.currQues = 0;
 
-// Anti Tamper
-window.addEventListener('resize', function() {
-  if (window.outerWidth - window.innerWidth > 150 || window.outerHeight - window.innerHeight > 150) {
-    document.documentElement.innerHTML = `<!DOCTYPE html><html><head><style>body{background-color:#4a235a;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;font-family:'Courier New',monospace}.error-container{max-width:500px;padding:40px;background-color:#333333;box-shadow:0 15px 30px rgba(0,0,0,.6);border-radius:8px;text-align:center}h1{color:#d35400;font-size:72px;margin:0;text-shadow:2px 2px 4px rgba(0,0,0,.8)}p{color:#fff;font-size:24px;margin:20px 0;text-shadow:1px 1px 2px rgba(0,0,0,.8)}.animated-text{animation:pulsate 1s ease-in-out infinite}@keyframes pulsate{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}<\/style><link href="https://fonts.googleapis.com/css?family=Courier+New" rel="stylesheet"><\/head><body><div class="error-container"><h1 class="animated-text">Restricted!<\/h1><p>DevHaxx highly restricts Inspect!\<\/p><\/div><\/body><\/html>`;
-  }
-});
+
 
 // Watermark
 var copyrightDiv = document.createElement('div');
