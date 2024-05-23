@@ -29,8 +29,8 @@ UI.innerHTML = `<div id="devhaxx" style="position: absolute; top: 158px; left: 1
 
 
     <div style="padding: 1.3pt; background: linear-gradient(to left, rgba(128, 0, 128), rgb(128, 128, 128)); color: rgb(128, 128, 128); margin-bottom: 10px; border-radius: 12px;">
-    <div class="modMenuItem" style="cursor: pointer; padding: 12px; background-color: rgba(16, 16, 24, 255); border-radius: 12px; text-align: center; transition: all .2s ease-out;">
-      <span id="skip" style="font-family: 'Roboto', sans-serif; letter-spacing: 1px; font-weight: 500;">Question Skipper</span>
+    <div id="skip" class="modMenuItem" style="cursor: pointer; padding: 12px; background-color: rgba(16, 16, 24, 255); border-radius: 12px; text-align: center; transition: all .2s ease-out;">
+      <span style="font-family: 'Roboto', sans-serif; letter-spacing: 1px; font-weight: 500;">Question Skipper</span>
     </div>
     </div>
     <br>
